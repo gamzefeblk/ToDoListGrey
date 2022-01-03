@@ -3,6 +3,13 @@
  onClickBtn.addEventListener("click", addElement)
  const ulElement = document.querySelector("ul")
 
+ onClickBtn.addEventListener("click", addElement)
+inputText.addEventListener("keyup", function (e) {
+    console.log("ddfdsf");
+    if (e.keyCode === 13) {
+        addElement()
+    }
+})
 
  function addElement() {
      if (inputText.value == "") {
@@ -38,9 +45,5 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
- //  const li = document.querySelector("li")
- //  li.forEach(element => {
- //      li.addEventListener("click", function () {
 
- //      })
- //  })
+
