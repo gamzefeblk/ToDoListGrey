@@ -1,0 +1,87 @@
+body{
+    background-image: url("./1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.listAdd{
+    height: 20%px;
+    padding: 15px;
+    width: 75%;
+    text-align: center;
+
+}
+.listAddinputs{
+    display:flex ;
+    flex-direction: row;
+    width: 70%;
+    height: 45px;
+    margin-left: 15px;
+    
+
+}
+
+.button{
+    width: 25%;
+    padding-right: 5px;
+    padding-left: 15px;
+    background-color:rgb(200, 208, 214);
+    height: 50px;
+}
+.input{
+    width: 70%;
+    height: 52px;
+    padding: 12px 8px 12px 40px;
+    
+}
+
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+
+ul li{
+    
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 71%;
+}
+ul li:hover {
+    background: #ddd;
+  }
+
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  .delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  .delete:hover {
+    background-color: #444040;
+    color: white;
+  }
